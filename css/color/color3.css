@@ -32,7 +32,7 @@
 #header .slicknav_nav a:active,
 #header.sticky .slicknav_nav a:hover,
 #header.normal .slicknav_nav a:hover{
-	color:#D2527F;
+	color:#a366ac;
 }
 #header .nav li a::before,
 #header .logo a::before,
@@ -101,15 +101,15 @@
 #call-action::before,
 #header.sticky .slicknav_btn,
 .k-line{
-	background: #D2527F;
+	background: #a366ac;
 }
 #header .nav li a::after,
 #portfolio .portfolio-nav ul li span::before,
 #clients.section{
-	border-top-color:#D2527F;
+	border-top-color:#a366ac;
 }
 #blog .blog-head{
-	border-bottom-color:#D2527F
+	border-bottom-color:#a366ac
 }
 #countdown .single-count:hover i:after,
 #countdown .single-count.active i:after,
@@ -118,7 +118,7 @@
 #contact .form-group input:hover,
 #contact .form-group input:focus,
 #contact .form-group textarea:hover{
-	border-color:#D2527F;
+	border-color: #a366ac;
 }
 #profilepic{
 	border-radius: 8px;
