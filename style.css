@@ -1095,7 +1095,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 16px;
-	margin: 0px 0 15px;
+	margin: -25px 0 15px;
 	position: relative;
 	top: -20px;
 	-webkit-transition:all 1s ease;
