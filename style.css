@@ -1085,6 +1085,7 @@
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
+	justify-content: contain;
 }
 #portfolio .portfolio-single:hover .portfolio-hover {
 	opacity:1;
@@ -1093,8 +1094,8 @@
 #portfolio .portfolio-hover h4 {
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 20px;
-	margin: -35px 0 15px;
+	font-size: 16px;
+	margin: 0px 0 15px;
 	position: relative;
 	top: -20px;
 	-webkit-transition:all 1s ease;
