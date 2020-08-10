@@ -1,65 +1,853 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta tag -->
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">	
+		
+		<!-- Title Tag -->
+        <title>Stephanie Raymos</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/fav.png">	
+		
+        <!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet"> 
+		
+		<!-- Image Timeline CSS -->
+		<link rel="stylesheet" href="css/imageTimeline.css">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.17.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.17.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.17.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.17.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.17.2/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link 
+		href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+		rel="stylesheet"  type='text/css'>
+		
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+		
+		<!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+		
+		<!-- Animate Text -->
+        <link rel="stylesheet" href="css/animate-text.css">
+		
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="css/owl.theme.default.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+		
+		<!-- Bootstrap Css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!-- Sufia StyleShet -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/reset.css">	
+        <link rel="stylesheet" href="css/responsive.css">	
+		
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+		<link rel="stylesheet" href="css/color/color3.css">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+		<!--[if lt IE 9]>
+           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+		<div class="loader">
+			<div class="loader-inner">
+				<div class="k-line k-line11-1"></div>
+				<div class="k-line k-line11-2"></div>
+				<div class="k-line k-line11-3"></div>
+				<div class="k-line k-line11-4"></div>
+				<div class="k-line k-line11-5"></div>
+			</div>
+		</div>
+		<!-- End Preloader -->
+	
+		<!-- Start Header -->
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-12 col-xs-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="#personal-area"><span>S</span>tephanie</a>
+						</div>
+						<!--/ End Logo -->
+						<div class="mobile-nav"></div>
+					</div>
+					<div class="col-md-10 col-sm-12 col-xs-12">
+						<div class="nav-area">
+							<!-- Main Menu -->
+							<nav class="mainmenu">
+								<div class="collapse navbar-collapse">
+									<ul class="nav navbar-nav menu">
+										<li class="active"><a href="#personal-area"><i class="fa fa-home"></i>Home</a>
+										</li>
+										<li><a href="#my-service"><i class="fa fa-rocket"></i>My Skills</a></li>
+										<li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+										<!-- <li><a href="#blog"><i class="fa fa-pencil"></i>Blog</a></li>		 -->
+										<li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>		
+									</ul>
+									<ul class="social-icon">
+										<li><a href="#header"><i class="fa fa-plus"></i></a></li>
+									</ul>
+									<ul class="social">
+										<li><a href="https://github.com/stephanieraymos"><i class="fa fa-github"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/stephanieraymos"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/ End Header -->
+			
+		<!-- Start Personal Area -->
+		<section id="personal-area" class="slider">
+			<div class="personal-main slide">
+				<!-- Single Slider -->
+				<div class="personal-single" style="background-image:url(./images/codeblur.jpg)">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<!-- Personal Text -->
+								<div class="personal-text">
+									<div class="my-info">
+										<h1>Stephanie Raymos</h1>
+										<h2>Full Stack Web Developer</h2>
+										<p>I'm a full stack web dev with experience in: </p>
+										<p>HTML5, CSS3, SCSS, Bootstrap, Javascript, React + Redux,</p>
+										<p>React Native, NodeJS, Express, MongoDB, and jQuery. </p>
+										<div class="button">
+											<a href="#contact" class="btn primary"><i class="fa fa-rocket"></i>Hire Me</a>
+											<a href="#portfolio" class="btn"><i class="fa fa-briefcase"></i>My Portfolio</a>
+										</div>
+									</div>
+								</div>
+								<!--/ End Personal Text -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Slider -->
+				<!-- Single Slider -->
+				<div class="personal-single" style="background-image:url(./images/darkoffice.jpg)">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<!-- Personal Text -->
+								<div class="personal-text right">
+									<div class="my-info">
+										<h1>Stephanie Raymos</h1>
+										<h2>Marketing Management</h2>
+										<p>I developed and sourced new marketing strategies, </p>
+										<p>implemented them, and analyzed the results.</p>
+										<p>Compiled everything I learned into an amazing strategy </p>
+										<p>that increases customer value and drives business growth.</p>
+										<div class="button">
+											<a href="RevisedResume2020.docx" target="_blank" class="btn primary"><i class="fa fa-rocket"></i>My Resume</a>
+											<a href="#portfolio" class="btn"><i class="fa fa-briefcase"></i>My Portfolio</a>
+									</div>
+								</div>
+								<!--/ End Personal Text -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Slider -->
+			</div>
+		</section>
+		<!--/ End Personal Area -->
+		
+		<!-- Start About Me -->
+		<section id="about-me" class="section default">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-title">
+							<h1><span>About</span> Me<i class="fa fa-rocket"></i></h1>
+							<p>"Many of life's failures are people who did not realize how close they were to success when they gave up." -Thomas Edison<p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 fix">
+						<!-- About Tab -->
+						<div class="tabs-main">
+							<!-- Tab Menu -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><span class="tooltips">About Me</span><a href="#welcome" role="tab" data-toggle="tab"><i class="fa fa-user"></i></a></li>
+								<li role="presentation"><span class="tooltips">My Skill</span><a href="#skill" role="tab"  data-toggle="tab"><i class="fa fa-rocket"></i></a></li>
+								<li role="presentation"><span class="tooltips">Why Me</span><a href="#why" role="tab"  data-toggle="tab"><i class="fa fa-question"></i></a></li>
+								<li role="presentation"><span class="tooltips">My Vision</span><a href="#vision" role="tab"  data-toggle="tab"><i class="fa fa-graduation-cap"></i></a></li>
+							</ul>
+							<!--/ End Tab Menu -->
+							<div class="tab-content">
+								<!-- Single Tab -->
+								<div role="tabpanel" class="tab-pane fade in active" id="welcome">
+									<div class="about-text">
+										<h2 class="tab-title">About Me</h2>
+										<div class="row">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<!-- About Image -->
+												<div class="single-image">
+													<img id="profilepic" src="images/stephollie.jpg" alt="">
+												</div>
+											</div>
+											<!-- End About Image -->
+											<div class="col-md-8 col-sm-12 col-xs-12">
+												<div class="content">
+													<h2 class="tab-title">Are you checking me out?</h2>
+													<p>As a teenager I walked in to my first Computer Science class having <strong>absoultely no clue</strong> that I was about to find my true passion. One semester was all it took for me to realize I had found what I was put on this earth to do. It was like; I didn't even know I was yearning for something, but I was yearning for this. I took the final 3 semesters that were offered in Middle School and then moved on to graphic design and art studies in High School. 
+													</p>
+													<p>After High School I started studying algorithms and number systems in my free time. I very quickly learned that all these things go hand in hand. My whole life has lead to this moment. This is my destiny.</p>
+												</div>
+												<div class="social">
+														<ul>
+															<li><a href="https://github.com/stephanieraymos" target="_blank"><i class="fa fa-github"></i></a></li>
+															<li><a href="https://www.linkedin.com/in/stephanieraymos" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+														</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Tab -->
+								<!-- Single Tab -->
+								<div role="tabpanel" class="tab-pane fade" id="skill">
+									<h2 class="tab-title">My Skill</h2>
+									<div class="row">				
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>Web Design</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span>100%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>Web Development</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span>80%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>NodeJS Backend</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"><span>75%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>React Frontend</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"><span>95%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>HTML5/CSS3</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span>100%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>Microsoft Office</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"><span>70%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>Product Marketing Management</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"><span>95%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<!-- Single Skill -->
+											<div class="single-skill">
+												<div class="skill-info">
+													<h4>Business Communications</h4>
+												</div>
+												<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span>80%</span></div>
+												</div>
+											</div>
+											<!--/ End Single Skill -->
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Tab -->
+								<!-- Single Tab -->
+								<div role="tabpanel" class="tab-pane fade" id="why">
+									<div class="about-text">
+										<h2 class="tab-title">Why Me?</h2>
+										<div class="content">
+											<p>I eat, sleep and breathe Computer Science.</p>
+											<p>If you're looking for someone who <strong>NEVER GIVES UP</strong>; you've landed exactly where you needed to.</p>
+											<p>I have such an strong passion for programming. In my free time; you'll find me at my desk with a huge smile on my face. This is what I love to do. It's second nature to me; as easy as breathing.</p>
+											<p>The issues and errors don't frustrate me because I know exactly where to look to find solutions. In fact; they're exciting to me, because once I've solved them; I've <strong>LEARNED</strong> something very valuable that will ultimately make me a much better coder.</p>
+											<p>I am different in many ways, but I consider my most important attribute to be that I bring my positivity anywhere I go; spreading it to everyone I approach.</p>
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Tab -->
+								<!-- Single Tab -->
+								<div role="tabpanel" class="tab-pane fade" id="vision">
+									<div class="about-text">
+										<h2 class="tab-title">My Vision</h2>
+										<div class="content">
+											<p> <strong>"Everything you can imagine is real." - Pablo Picasso</strong></p>
+											<p>I want to be part of a team that isn't afraid to be bold. A team that lets creative ideas flow. In order to stand out you have to break out of expected patterns and look at things from a different perspective.</p>
+											<p>As a visionary; I love to <strong>CREATE.</strong> Working for a startup would be amazing since it would allow me the opportunity to be innovative.</p>
+											<p>Whenever someone comes to me with a programming question that starts with "I don't know if this is even possible but.." I get a little excited. If it's something I don't already know how to do; I get to learn something that some might view to be out of the scope of possibilities. Which, I mean come on; is that not one of the most exciting parts of being a developer? And I also get to help inspire the creative mind of a fellow developer and show them that <strong>anything you can think of; is possible.</strong></p>
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Tab -->
+							</div>
+						</div>
+						<!--/ End About Tab -->
+					</div>
+				</div>
+			</div>
+		</section>		
+		<!--/ End About Me -->	
+
+		<!-- Start Count Down -->
+		<section id="countdown" class="section" data-stellar-background-ratio="0.3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+						<!-- Single Count -->
+						<div class="single-count">
+							<a href="https://github.com/stephanieraymos" target="_blank" style="color: white"><i class="fa fa-file-code-o"></i></a>
+							<h2><span class="count">2</span></h2>
+							<p>Current Projects</p>
+						</div>
+						<!--/ End Single Count -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+						<!-- Single Count -->
+						<div class="single-count">
+							<a href="https://github.com/stephanieraymos" target="_blank" style="color: white"><i class="fa fa-code-fork"></i></a>
+							<h2><span class="count">805<span></h2>
+							<p>Contributions in the last year</p>
+						</div>
+						<!--/ End Single Count -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
+						<!-- Single Count -->
+						<div class="single-count active">
+							<a href="https://github.com/stephanieraymos" target="_blank" style="color: white"><i class="fa fa-github"></i></a>
+							<h2><span class="count">35</span></h2>
+							<p>Repositories</p>
+						</div>
+						<!--/ End Single Count -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="1s">
+						<!-- Single Count -->
+						<div class="single-count">
+							<a href="https://github.com/stephanieraymos" target="_blank" style="color: white"><i class="fa fa-users"></i></a>
+							<h2><span class="count">7</span></h2>
+							<p>Organizations</p>
+						</div>
+						<!--/ End Single Count -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Count Down -->
+		
+
+		<!-- Start portfolio -->
+		<section id="portfolio" class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-title">
+							<h1><span>My</span> Portfolio<i class="fa fa-briefcase"></i></h1>
+						</div>
+					</div>
+				</div>
+						
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<!-- portfolio Nav -->
+						<div class="portfolio-nav">
+							<ul>
+								<li class="active" data-filter="*"><span>06</span><i class="fa fa-tasks"></i>All Works</li>
+								<li data-filter=".development"><span>06</span><i class="fa fa-pencil"></i>Web Development</li>
+								<li data-filter=".design"><span>05</span><i class="fa fa-paint-brush"></i>Web Design</li>
+							</ul>
+						</div>
+						<!--/ End portfolio Nav -->
+					</div>
+				</div>
+						
+				<div class="portfolio-inner">
+					<div class="row stylex">	
+						<div class="isotop-active">
+							<!-- Single portfolio -->
+							<div class="mix development design col-md-4 col-sm-6 col-xs-12 col-fix ">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/stressless.jpg" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>UI Designer</span><a href="#">Stress Less</a></h4>
+										<p>This is a mobile app I made as a school project. Tech Stack: React, React Native, Javascript, JSON</p>
+										<div class="button">
+											<a href= "https://www.loom.com/share/a8dd2e88851b407687a18db79c0f55ed" target="_blank"><i class="fa fa-search"></i></a>
+											<a href="https://github.com/stephanieraymos/StressLess" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->					
+							<!-- Single portfolio -->
+							<div class="mix development col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/blog.png" alt="Blog"/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Full-Stack Web Developer</span><a href="#">Simple Blog</a></h4>
+										<p>A simple blog I created as a school project. Node.js, HTML, CSS, EJS, JavaScript, JSON.</p>
+										<div class="button">
+											<a href="https://www.loom.com/share/460ea68d7dcc4a709e3d1d686d44b897" target="_blank"><i class="fa fa-search"></i></a>
+											<a href="https://github.com/stephanieraymos/markdown-blog" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div> 
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->
+
+							<!-- Single portfolio -->
+							<div class="mix development design col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/todo2.0comp.png" alt="Todo2.0"/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Full-Stack Web Developer</span><a href="#">Simple Todo List</a></h4>
+										<p>A simple todo. Users can add, delete and check todo items. The items on the list save to local storage and are dropped from storage when they're deleted. Tech Stack: HTML, CSS, JavaScript, Jquery.</p>
+										<div class="button">
+											<a href="https://www.loom.com/share/cb47ca32b88e4fb6921d09657144e714" target="_blank"><i class="fa fa-search"></i></a>
+											<a href="https://github.com/stephanieraymos/TodoList2.0" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div> 
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->
+						
+							<!-- Single portfolio -->
+							<div class="mix development design col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/audie.png" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Web Developer</span><a href="#">Audie Designs</a></h4>
+										<p>Portfolio I made for a client. Tech Stack: React, Node.js.</p>
+										<div class="button">
+											<a href="https://github.com/stephanieraymos/AudieDesigns" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->	
+							<!-- Single portfolio -->
+							<div class="mix development design col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/mommin.png" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Web Developer</span><a href="#">Mommin101</a></h4>
+										<p>Tech Stack: Google Analytics, HTML5, CSS, Javascript, WordPress, MailChimp.</p>
+										<div class="button">
+											<a data-fancybox="gallery" href="./images/momminb.png"><i class="fa fa-search"></i></a>
+											<a href="www.mommin101.com" class="primary"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->		
+
+							<!-- Single portfolio -->
+							<div class="mix development design col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/nucampsite.jpg" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Web Developer</span><a href="#">NuCampsite School Project</a></h4>
+										<p>School project. Tech Stack: React, Redux, HTML, CSS, Javascript.</p>
+										<div class="button">
+											<a href="https://www.loom.com/share/08b31550a955477482b7fe5b873330f3" target="_blank"><i class="fa fa-search"></i></a>
+											<a href="https://github.com/stephanieraymos/nucampsite-react" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->
+
+							<!-- Single portfolio -->
+							<div class="mix design col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/eoblogs.png" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Web Developer</span><a href="#"></a></h4>
+										<p>Tech Stack: HTML, CSS.</p>
+										<div class="button">
+											<a data-fancybox="gallery" href="./images/eo.png"><i class="fa fa-search"></i></a>
+											<a href="https://github.com/stephanieraymos/eo-blog" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->
+
+							<!-- Single portfolio -->
+							<div class="mix python col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/firstport.jpg" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Web Developer</span><a href="#">My First Portfolio</a></h4>
+										<p>Tech Stack: React.</p>
+										<div class="button">
+											<a href="https://github.com/stephanieraymos/myPortfolio" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->	
+
+							<!-- Single portfolio -->
+							<div class="mix python col-md-4 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="./images/dccApp.png" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>Web Developer</span><a href="#">Automated Player Script</a></h4>
+										<p>Tech stack: React, React Native, Redux, NodeJS</p>
+										<div class="button">
+											<a data-fancybox="gallery" href="./images/dcc.png"><i class="fa fa-search"></i></a>
+											<a href="https://github.com/stephanieraymos/DCC" target="_blank" class="primary"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ End portfolio -->										
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row"> -->
+					<!-- Button -->
+					<!-- <div class="button">
+						<a href="portfolio-full-width.html" class="btn">More Portfolio<i class="fa fa-angle-double-right"></i></a>
+					</div> -->
+					<!-- End Button -->
+				<!-- </div> -->
+			</div>
+		</section>
+		<!--/ End portfolio -->
+
+		<!-- Start Service -->
+		<section id="my-service" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-title">
+							<h1><span>My</span> Skills<i class="fa fa-rocket"></i></h1>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
+						<!-- Single Service -->
+						<div class="single-service active">
+							<i class="fa fa-html5"></i>
+							<h2>Web Design</h2>
+							<p>Adobe Photoshop, Vectors (logo creation), Blender, Advanced CSS shape builder.</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.6s">
+						<!-- Single Service -->
+						<div class="single-service">
+							<i class="fa fa-code"></i>
+							<h2>Web Development</h2>
+							<p>HTML5, CSS3, EJS, Javascript, React, Redux, MongoDB, NodeJS.</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.8s">
+						<!-- Single Service -->
+						<div class="single-service">
+							<i class="fa fa-mobile"></i>
+							<h2>Marketing Management</h2>
+							<p>Google Analytics, Search Engine Marketing, Content Curation, Project Management.</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1s">
+						<!-- Single Service -->
+						<div class="single-service">
+							<i class="fa fa-pencil-square-o"></i>
+							<h2>Digital Marketing</h2>
+							<p>Spreading awareness and communicating values through social media and written articles.</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Service -->
+				
+					
+		
+		<!-- Start Contact -->
+		<section id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-title">
+							<h1><span>Contact</span> Me<i class="fa fa-star"></i></h1>
+							<p>I'll make you proud!<p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Contact Form -->
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.4s">
+						<form class="form" method="post" action="action_page.php" target="_blank">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" name="first_name" 
+										placeholder="First name" required="required">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" name="last_name" placeholder="Last Name" required="required">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" name="telephone" placeholder="Phone Number" >
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" name="email" placeholder="Your Email" required="required">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="message" rows="6" placeholder="Type Your Message Here" ></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group button">	
+										<button type="submit"
+										value="submit"
+										class="button primary"><i class="fa fa-send"></i>Submit</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!--/ End Contact Form -->
+					<!-- Contact Address -->
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.8s">
+						<div class="contact">
+							<!-- Single Address -->
+							<div class="single-address">
+								<i class="fa fa-phone"></i> 
+								<div class="title">
+									<h4>My Phone</h4>
+									<p>+208-965-0520</p>
+								</div>
+							</div>
+							<!--/ End Single Address -->
+							<!-- Single Address -->
+							<div class="single-address">
+								<i class="fa fa-envelope"></i> 
+								<div class="title">
+									<h4>Email Address</h4>
+									<p><a href="mailto:stephanieraymos@gmail.com">stephanieraymos@gmail.com</a></p>
+								</div>
+							</div>
+							<!--/ End Single Address -->
+							<!-- Single Address -->
+							<div class="single-address">
+								<i class="fa fa-location-arrow"></i> 
+								<div class="title">
+									<h4>Location</h4>
+									<p>Sacramento, CA</p>
+								</div>
+							</div>
+							<!--/ End Single Address -->
+						</div>
+					</div>
+					<!--/ End Contact Address -->
+				</div>
+			</div>
+		</section>
+		<!--/ End Contact -->
+		<!-- Start Clients...under construction-->
+		<div id="clients" class="section" data-stellar-background-ratio="0.3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="clients-slider">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Clients -->
+	
+		<!-- Start Footer -->
+		<footer id="footer">
+			<!-- Arrow -->
+			<div class="arrow">
+				<a href="#personal-area" class="btn"><i class="fa fa-angle-up"></i></a>
+			</div>
+			<!--/ End Arrow -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Copyright -->
+						<div class="copyright">
+							<p>Putting the pizza in pizzaz, one takeout at a time.</p>
+						</div>
+						<!--/ End Copyright -->
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Social -->
+						<ul class="social">
+							<li><a href="https://github.com/stephanieraymos"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/stephanieraymos"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+						<!--/ End Social -->
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/ End Footer -->
+		
+		<!-- Jquery -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+		<!-- Modernizr JS -->
+		<script type="text/javascript" src="js/modernizr.min.js"></script>
+			
+		<!-- WOW JS -->
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		
+		<!-- Fancybox js -->
+		<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+		
+		<!-- Animate Text JS -->
+		<script type="text/javascript" src="js/animate-text.js"></script>
+		
+		<!-- Mobile Menu JS -->
+    	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+		
+		<!-- Jquery Parallax -->
+    	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+		
+		<!-- Jquery Easing -->
+    	<script type="text/javascript" src="js/easing.js"></script>
+		
+		<!-- One Page Nav JS -->
+    	<script type="text/javascript" src="js/jquery.nav.js"></script>
+		
+		<!-- Slider Carousel JS -->
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+		<!-- Youtube Player JS -->
+		<script type="text/javascript" src="js/ytplayer.min.js"></script>
+
+		<!-- Particle JS -->
+		<script type="text/javascript" src="js/particles.min.js"></script>
+		
+		<!-- Counter JS -->
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+		
+		<!-- Mixitup JS -->
+		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+		
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+		<!-- Main JS -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<script type="text/javascript" src="js/imageTimeline.js"></script>
+
+	
+    </body>
 </html>
