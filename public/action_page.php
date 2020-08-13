@@ -8,7 +8,7 @@
     $formcontent="From: $name.\n".
                     "Email: $email.\n".
                     "Message: $message.\n";
-    $recipient = "stephanie@stephanieraymos.com";
+    $recipient = "raymosstephanie@outlook.com";
     $subject = "Contact Form";
     $mailheader = "From: $email \r\n";
     $mailheader = "Reply-To: $email \r\n";
