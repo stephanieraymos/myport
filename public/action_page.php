@@ -1,5 +1,5 @@
 <?php 
-
+    if(!empty($_POST["send"])) {
     $name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $phone = $_POST['telephone'];
@@ -13,10 +13,13 @@
     $mailheader = "From: $email \r\n";
     $mailheader = "Reply-To: $email \r\n";
 
-    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+    if(mail($recipient, $subject, $formcontent, $mailheader)) {
+	    $message = "Your inquiry has been sent.";
+	    $type = "success";
+	}
 
-    echo "Thank You for your email!";
+    //echo "Thank You for your email!";
 
     header("Location: index.html");
-    
+    }
 ?>
