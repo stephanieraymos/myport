@@ -34,13 +34,13 @@ function firebasePush(input) {
     }
 
     //push itself
-    var mailsRef = firebase.database().ref('Info').push().set(
+    var submissions = firebase.database().ref('submissions').push().set(
         {
-            mail: input.value,
-            firstName: input.value,
-            lastName: input.value,
-            message: input.value,
-            phone: input.value
+            submission: input.value,
+            // firstName: input.value,
+            // lastName: input.value,
+            // message: input.value,
+            // phone: input.value
 
 
         }
