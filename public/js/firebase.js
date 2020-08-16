@@ -45,6 +45,6 @@ if (form) {
         firebasePush(inputEmail);
 
         //shows alert if everything went well.
-        return alert('Data Successfully Sent to Realtime Database');
+        return alert('Thank you for your message!');
     })
 }
