@@ -5,6 +5,10 @@ const form = document.querySelector('.form-inline');
 
 //grab an input
 const inputEmail = form.querySelector('#inputEmail');
+const inputFirstName = form.querySelector('#inputFirstName');
+const inputLastName = form.querySelector('#inputLastName');
+const inputMessage = form.querySelector('#inputMessage');
+const inputPhone = form.querySelector('#inputPhone');
 
 
 //config your firebase push
@@ -35,6 +39,26 @@ function firebasePush(input) {
             mail: input.value
         }
     );
+    var firstNameRef = firebase.database().ref('first-name').push().set(
+        {
+            firstName: input.value
+        }
+    );
+    var lastNameRef = firebase.database().ref('last-name').push().set(
+        {
+            lastName: input.value
+        }
+    );
+    var messagesRef = firebase.database().ref('message').push().set(
+        {
+            message: input.value
+        }
+    );
+    var phoneRef = firebase.database().ref('phone').push().set(
+        {
+            phone: input.value
+        }
+    );
 
 }
 
@@ -43,6 +67,11 @@ if (form) {
     form.addEventListener('submit', function (evt) {
         evt.preventDefault();
         firebasePush(inputEmail);
+        firebasePush(inputFirstName);
+        firebasePush(inputLastName);
+        firebasePush(inputMessage);
+        firebasePush(inputPhone);
+
 
         //shows alert if everything went well.
         return alert('Thank you for your message!');
