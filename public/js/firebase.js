@@ -34,31 +34,37 @@ function firebasePush(input) {
     }
 
     //push itself
-    var mailsRef = firebase.database().ref('emails').push().set(
+    var mailsRef = firebase.database().ref('Info').push().set(
         {
-            mail: input.value
-        }
-    );
-    var firstNameRef = firebase.database().ref('first-name').push().set(
-        {
-            firstName: input.value
-        }
-    );
-    var lastNameRef = firebase.database().ref('last-name').push().set(
-        {
-            lastName: input.value
-        }
-    );
-    var messagesRef = firebase.database().ref('message').push().set(
-        {
-            message: input.value
-        }
-    );
-    var phoneRef = firebase.database().ref('phone').push().set(
-        {
+            mail: input.value,
+            firstName: input.value,
+            lastName: input.value,
+            message: input.value,
             phone: input.value
+
+
         }
     );
+    // var firstNameRef = firebase.database().ref('first-name').push().set(
+    //     {
+    //         firstName: input.value
+    //     }
+    // );
+    // var lastNameRef = firebase.database().ref('last-name').push().set(
+    //     {
+    //         lastName: input.value
+    //     }
+    // );
+    // var messagesRef = firebase.database().ref('message').push().set(
+    //     {
+    //         message: input.value
+    //     }
+    // );
+    // var phoneRef = firebase.database().ref('phone').push().set(
+    //     {
+    //         phone: input.value
+    //     }
+    // );
 
 }
 
@@ -66,11 +72,11 @@ function firebasePush(input) {
 if (form) {
     form.addEventListener('submit', function (evt) {
         evt.preventDefault();
-        firebasePush(inputEmail);
-        firebasePush(inputFirstName);
-        firebasePush(inputLastName);
-        firebasePush(inputMessage);
-        firebasePush(inputPhone);
+        firebasePush(inputEmail, inputFirstName, inputLastName, inputMessage, inputPhone);
+        // firebasePush(inputFirstName);
+        // firebasePush(inputLastName);
+        // firebasePush(inputMessage);
+        // firebasePush(inputPhone);
 
 
         //shows alert if everything went well.
