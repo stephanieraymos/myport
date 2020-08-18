@@ -37,35 +37,12 @@ function firebasePush(firstName, lastName, message, phone) {
     var submissions = firebase.database().ref('submissions').push().set(
         {
             submission: [firstName.value, lastName.value, message.value, phone.value]
-            // firstName: input.value,
-            // lastName: input.value,
-            // message: input.value,
-            // phone: input.value
-
 
         }
     );
-    // var firstNameRef = firebase.database().ref('first-name').push().set(
-    //     {
-    //         firstName: input.value
-    //     }
-    // );
-    // var lastNameRef = firebase.database().ref('last-name').push().set(
-    //     {
-    //         lastName: input.value
-    //     }
-    // );
-    // var messagesRef = firebase.database().ref('message').push().set(
-    //     {
-    //         message: input.value
-    //     }
-    // );
-    // var phoneRef = firebase.database().ref('phone').push().set(
-    //     {
-    //         phone: input.value
-    //     }
-    // );
-
+}
+function resetForm() {
+    document.getElementById("form").reset();
 }
 
 //push on form submit
@@ -73,12 +50,7 @@ if (form) {
     form.addEventListener('submit', function (evt) {
         evt.preventDefault();
         firebasePush(inputEmail, inputFirstName, inputLastName, inputMessage, inputPhone);
-        // firebasePush(inputFirstName);
-        // firebasePush(inputLastName);
-        // firebasePush(inputMessage);
-        // firebasePush(inputPhone);
-
-
+        
         //shows alert if everything went well.
         return alert('Thank you for your message!');
     })
