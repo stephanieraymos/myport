@@ -25,7 +25,7 @@ const config = {
 
 
 //create a functions to push
-function firebasePush(input) {
+function firebasePush(firstName, lastName, message, phone) {
 
 
     //prevents from braking
@@ -36,7 +36,7 @@ function firebasePush(input) {
     //push itself
     var submissions = firebase.database().ref('submissions').push().set(
         {
-            submission: input.value,
+            submission: [firstName.value, lastName.value, message.value, phone.value]
             // firstName: input.value,
             // lastName: input.value,
             // message: input.value,
