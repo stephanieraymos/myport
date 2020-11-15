@@ -1034,7 +1034,7 @@
 	border-radius: 0px;
 	bottom: 0;
 	right: -100px;
-	padding: 0;
+	padding: 10px;
 }
 #portfolio .portfolio-single:hover .btn{
 	right:0;
