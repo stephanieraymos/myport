@@ -1034,7 +1034,7 @@
 	border-radius: 0px;
 	bottom: 0;
 	right: -100px;
-	padding: 10px;
+	padding: 0;
 }
 #portfolio .portfolio-single:hover .btn{
 	right:0;
@@ -1064,6 +1064,10 @@
 	-webkit-transform:translateY(0%);
 	-moz-transform:translateX(0%);
 	transform:translateX(0%);
+}
+#portfolio .portfolio-head {
+	display: flex;
+	padding: 20px 25px 20px 25px;
 }
 #portfolio .portfolio-head img{
 	width:100%;
