@@ -1040,6 +1040,8 @@
 	right:0;
 }
 #portfolio .portfolio-head{
+	display: flex;
+	padding: 25px 45px 25px 45px;
 	position:relative;
 } 
 #portfolio .portfolio-head::before {
@@ -1064,10 +1066,6 @@
 	-webkit-transform:translateY(0%);
 	-moz-transform:translateX(0%);
 	transform:translateX(0%);
-}
-#portfolio .portfolio-head {
-	display: flex;
-	padding: 20px 25px 20px 25px;
 }
 #portfolio .portfolio-head img{
 	width:100%;
