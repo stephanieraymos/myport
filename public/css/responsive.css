@@ -507,4 +507,11 @@
 #footer-top .news-form {
 	width: 301px;
 }
+#portfolio .portfolio-head{
+	position:relative;
+} 
+#portfolio .portfolio-head img{
+	width:auto;
+	z-index:10;
+}
 }

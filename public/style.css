@@ -1042,8 +1042,18 @@
 #portfolio .portfolio-head{
 	display: flex;
 	padding: 25px 45px 25px 45px;
-	position:relative;
-} 
+	position:relative;} 
+
+/* @media only screen and (max-width: 400px) {
+	#portfolio .portfolio-head{
+		position:relative;
+	} 
+	#portfolio .portfolio-head img{
+		width:auto;
+		z-index:10;
+	}
+} */
+
 #portfolio .portfolio-head::before {
 	position: absolute;
 	top: 0;
