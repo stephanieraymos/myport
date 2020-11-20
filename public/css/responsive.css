@@ -507,11 +507,11 @@
 #footer-top .news-form {
 	width: 301px;
 }
-#portfolio .portfolio-head{
+#portfolio .portfolio-head {
 	position:relative;
+	padding: 0;
 } 
-#portfolio .portfolio-head img{
-	width:auto;
+#portfolio .portfolio-head img {
 	z-index:10;
 }
 }

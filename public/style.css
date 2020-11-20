@@ -1080,7 +1080,10 @@
 #portfolio .portfolio-head img{
 	width:100%;
 	z-index:10;
+	height: 100%;
+
 }
+
 #portfolio .portfolio-single:hover img{
 	transform:scale(1.1);
 }
