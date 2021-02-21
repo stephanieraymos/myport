@@ -1,6 +1,3 @@
-## This is my portfolio website. 
+# Portfolio 
 
-It's purpose is to showcase some of my work, 
-and to give people an easy way to get to know who I am.
-
-Tech stack: HTML, CSS & JavaScript. 
+Tech stack: HTML, CSS & JavaScript
